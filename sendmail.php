@@ -31,12 +31,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'nazarsipot@gmail.com'; // Логин на почте
+    $mail->Host       = 'smtp.rambler.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'exemple@rambler.ru'; // Логин на почте
     $mail->Password   = 'qaipcxdyfewjsmce'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('nazarsipot@gmail.com', 'Blanchard'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('exemple@rambler.ru', 'Blanchard'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('blanchardtest@rambler.ru'); 
